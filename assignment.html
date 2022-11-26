@@ -1,0 +1,161 @@
+<!DOCTYPE >
+<html>
+    <head>
+
+    </head>
+
+<style>
+    .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+    .cook{ font-family:cursive ;color: white;}
+  body { background-color:orange;}
+    .center { text-align: center;
+     border: 0cm;
+   background-color: orange;
+  color: white;}
+     .right{ text-align: right; justify-content: right;
+     border-radius: 40px;
+     background-color: orange;
+     border-color: white;
+     color: white;}
+     
+      .container{
+          width: 100% ;height: 100vh;
+          background: orange;
+          display: flex;
+          align-items: right;
+          justify-content: right;
+      }
+      .swiper{
+          width: 80%;
+          height:;
+      }
+      .swiper-slide img{
+          width: 100%;
+          
+      }
+      .p1{text-align: center; color: #FFFFFF;}
+  
+  </style>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  
+  
+  <body class="body" >
+    <h1 class="cook"> Cooks </h1> 
+    
+      <p class="right">
+        <a href="signup.html"><button> Sign Up </button>
+        </a>
+      </p>
+      <p class="center">
+      <button class="center">Home</button>
+      <button class="center"> Restaurant </button>
+      <button class="center"> Home Chefs </button>
+      <button class="center"> Offers </button>
+      <button class="center"> About Us </button>
+      </p>
+      <br>
+      <h1>Enjoy 
+        Delicious
+         Meals</h1>   <div class="dropdown">
+          <button>Select Food</button>
+          <div class="dropdown-content">
+          <a href="page2.html">Goatmeat</a>
+          <a href="page2.html">RiceSalad</a>
+          <a href="page2.html">TastySoup</a>
+          </div>
+        </div>
+  
+         <p class="p1"> Meals delivered <br> to your doorstep </p>
+  
+        
+  
+  
+  
+         <br>
+         
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      
+  
+     
+  <div class="container">
+      <br>
+  <!-- Slider main container -->
+  <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="swiper/goatmeat.JPG"> </div>
+        <div class="swiper-slide"><img src="swiper/rice1.JPG"> </div>
+        <div class="swiper-slide"><img src="swiper/tastysoup.JPG"> </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> 
+    
+  
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+      const swiper = new Swiper('.swiper', {
+    autoplay:{
+      delay:#3000,
+      disableOnInteraction:false,
+    loop: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+      });
+  </script>
+  <br>
+  <button>
+
+  </button>
+  </body>
+  
+  
+  
+  <html>
+   
+   
+  
+  
+  
+  
